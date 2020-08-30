@@ -19,3 +19,10 @@
 const Route = use('Route')
 
 Route.get('/', 'ListController.show')
+
+
+Route.get('/login', 'AuthController.index')
+Route.post('/login', 'AuthController.login')
+
+Route.get('/register', 'RegisterController.index')
+Route.post('register', 'RegisterController.doRegister')
